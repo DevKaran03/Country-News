@@ -20,12 +20,12 @@ import firebase from '@react-native-firebase/app';
 
 const Stack = createStackNavigator();
 const firebaseConfig = {
-  apiKey: 'AIzaSyC0Z_nzsPqm8cgM5Vs5Sxbtg5z3CZnxUgg',
-  authDomain: 'news-app-1174b.firebaseapp.com',
-  projectId: 'news-app-1174b',
-  storageBucket: 'news-app-1174b.appspot.com',
-  messagingSenderId: '1011993231870',
-  appId: '1:1011993231870:web:c71776cc13ecd4d76400af',
+  apiKey: 'Firebase_apikey',
+  authDomain: 'Firebase_auth_domain',
+  projectId: 'project_id',
+  storageBucket: 'Firebase_bucket,
+  messagingSenderId: 'sender_id',
+  appId: 'App_id',
 };
 if (!firebase.app.length) {
   firebase.initializeApp(firebaseConfig);
@@ -45,7 +45,7 @@ const fn = () => {
 const App = ({navigation}) => {
   React.useEffect(() => {
     OneSignal.setLogLevel(6, 0);
-    OneSignal.setAppId('eb41ff24-e3f6-45e4-a2ef-cbbdfa46fe58');
+    OneSignal.setAppId('Onesignal_appid');
     return () => {
       fn();
     };
