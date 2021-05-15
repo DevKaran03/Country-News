@@ -23,7 +23,7 @@ function HomeScreen({navigation}) {
   React.useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=${selectedValue}&apiKey=7d7d6af238e94eaeafb7bc1c8f1f0e83`,
+        `https://newsapi.org/v2/top-headlines?country=${selectedValue}&apiKey={News_Api_Key}`,
       )
       .then(data => {
         setNews(data.data.articles);
